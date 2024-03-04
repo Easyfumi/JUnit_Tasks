@@ -1,6 +1,6 @@
-package ru.marinin.reflection;
+package ru.marinin;
 
-import ru.marinin.reflection.annotations.Test;
+import ru.marinin.annotations.Test;
 
 public class MyEntityTests {
     @Test

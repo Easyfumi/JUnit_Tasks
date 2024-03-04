@@ -1,12 +1,13 @@
-package ru.marinin.reflection.annotations;
+package ru.marinin.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE, ElementType.ANNOTATION_TYPE})
+@Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Validate {
-    Class[] value();
+public @interface Two {
+    String first() default "";
+    int second() default 0;
 }

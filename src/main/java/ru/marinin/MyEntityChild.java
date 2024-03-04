@@ -1,7 +1,7 @@
-package ru.marinin.reflection;
+package ru.marinin;
 
 
-import ru.marinin.reflection.annotations.ToString;
+import ru.marinin.annotations.ToString;
 
 public class MyEntityChild extends MyEntity {
     @ToString(NeedToString.NO)

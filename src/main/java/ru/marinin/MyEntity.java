@@ -1,8 +1,8 @@
-package ru.marinin.reflection;
+package ru.marinin;
 
-import ru.marinin.reflection.annotations.Invoke;
-import ru.marinin.reflection.annotations.ToString;
-import ru.marinin.reflection.annotations.Validate;
+import ru.marinin.annotations.ToString;
+import ru.marinin.annotations.Invoke;
+import ru.marinin.annotations.Validate;
 
 @Validate(MyEntityTests.class)
 @ToString(NeedToString.NO)

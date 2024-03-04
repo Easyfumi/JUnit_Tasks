@@ -1,7 +1,7 @@
-package ru.marinin.reflection;
+package ru.marinin;
 
-import ru.marinin.reflection.annotations.Test;
-import ru.marinin.reflection.annotations.Validate;
+import ru.marinin.annotations.Test;
+import ru.marinin.annotations.Validate;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

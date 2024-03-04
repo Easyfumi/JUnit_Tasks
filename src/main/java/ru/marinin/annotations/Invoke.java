@@ -1,4 +1,4 @@
-package ru.marinin.reflection.annotations;
+package ru.marinin.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,8 +1,6 @@
-package ru.marinin.reflection;
+package ru.marinin;
 
-import ru.marinin.geometry.Line;
-import ru.marinin.geometry.Point;
-import ru.marinin.reflection.annotations.Invoke;
+import ru.marinin.annotations.Invoke;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -25,24 +23,6 @@ public class reflectionUtils {
         }
         return fieldList;
     }
-
-
-    public static<T extends Point> void lineConnector(Line<T> line1, Line<T> line2) {
-        try {
-            Field fieldStart = line2.getClass().getDeclaredField("start");
-            Field fieldEnd = line1.getClass().getDeclaredField("end");
-            fieldEnd.setAccessible(true);
-            fieldStart.setAccessible(true);
-            fieldStart.set(line2, fieldEnd.get(line1));
-        } catch (NoSuchFieldException e) {
-            System.out.println("ne nashol");
-            throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            System.out.println("ne zamenil");
-            throw new RuntimeException(e);
-        }
-    }
-
 
     public static Map collect(Class... classes) {
 

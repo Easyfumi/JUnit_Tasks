@@ -2,6 +2,7 @@ package ru.marinin;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MyEntity myEntity = new MyEntity();
+        System.out.println(myEntity);
     }
 }

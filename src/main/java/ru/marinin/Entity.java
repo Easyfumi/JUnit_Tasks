@@ -1,6 +1,7 @@
-package ru.marinin.reflection;
+package ru.marinin;
 
-import ru.marinin.reflection.annotations.ToString;
+import ru.marinin.annotations.ToString;
+import ru.marinin.annotations.Two;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -11,6 +12,7 @@ import java.util.Map;
 
 public abstract class Entity {
 
+    @Two
     @Override
     public final String toString() {
 
