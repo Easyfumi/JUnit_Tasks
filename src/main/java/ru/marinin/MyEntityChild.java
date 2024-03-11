@@ -4,7 +4,7 @@ package ru.marinin;
 import ru.marinin.annotations.ToString;
 
 public class MyEntityChild extends MyEntity {
-    @ToString(NeedToString.NO)
-    private String str2 = "s2";
+    @ToString(NeedToString.YES)
+    public String str2 = "s2";
     private int ent2 = 2;
 }

@@ -5,7 +5,7 @@ import ru.marinin.annotations.Invoke;
 import ru.marinin.annotations.Validate;
 
 @Validate(MyEntityTests.class)
-@ToString(NeedToString.NO)
+@ToString(NeedToString.YES)
 public class MyEntity extends Entity {
     private String str1 = "s1";
     private int ent1 = 1;
